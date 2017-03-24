@@ -34,9 +34,9 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     zone = parameters.get("parcelnumber")
 
-    cost = {'5000':100, '5001':200, '5002':300, '5003':400, '5004':500}
+    cost = {'5000':'your parcel has been shipped', '5001':'your parcel has not been shipped', '5002':'should be delivered on three days', '5003':'your parcel has not been shipped', '5004':'your parcel has been shipped'}
 
-    speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
+    speech = "Parcel with numner" + zone + " is " + str(cost[zone]) "
 
     print("Response:")
     print(speech)
