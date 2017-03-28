@@ -36,7 +36,7 @@ def makeWebhookResult(req):
 
     parcelinfo = {'5000':'your parcel has been shipped', '5001':'your parcel has not been shipped', '5002':'should be delivered on three days', '5003':'your parcel has not been shipped', '5004':'your parcel has been shipped'}
 
-    speech = "Parcel with numner" + parcelnr + " is " + str(parcelinfo[parcelnr]) "
+    speech = "Parcel with numner" + parcelnr + " is " + str(parcelinfo[parcelnr]) 
 
     print("Response:")
     print(speech)
